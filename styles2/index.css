@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(126, 172, 187);
+    
+}
+
+
+
+#insc_button{
+  border: 2px solid black;
+  margin: 1.5rem;
+  padding: 1rem;
+  font-size: 20px
+}
+
+#insc_button:hover{
+    font: bold;
+    color: #fff;
+    transform: scale(1.1, 1.1);
+}
+
+
+#titulo_ppal{
+    text-align: center;
+    color: rgba(0, 0, 255, 0.863);
+    font-size: 3rem;
+}
+
+
+table{
+    text-align: center;
+    margin: 2rem;
+}
+
+#redes_sociales{
+    border: 2px solid rgba(0, 0, 255, 0.295);
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    max-width: 30rem;
+}
+
+#redes_sociales a:hover{
+    text-decoration: none;
+    color: #fff;
+    font: bold;
+}
+
+#ir_inicio{
+    text-align: center;
+}
+
+#ir_inicio a:hover{
+    text-decoration: none;
+    color: #fff;
+    font: bold; 
+}

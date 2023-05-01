@@ -53,16 +53,18 @@ table{
     font-weight: 600;
 }
 
-#redes_sociales a:hover{
+.fa-brands{
+    color:blue;
+    font-size: 2rem;
+}
+
+.fa-brands:hover{
     text-decoration: none;
     color: #fff;
     font: bold;
 }
 
-.fa-brands{
-    color:blue;
-    font-size: 2rem;
-}
+
 
 #ir_inicio{
     text-align: center;

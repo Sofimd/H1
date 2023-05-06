@@ -9,6 +9,7 @@
 #nav {
   display: flex;
   justify-content: space-between;
+  padding-bottom: .5rem;
 }
 
 #nav a {
@@ -45,10 +46,15 @@
   align-items: center;
 }
 
+#footer a{
+    margin: 2rem;
+}
+
 #comentarios {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 4rem 0 4rem;
 }
 
 #comentarios h2 {
@@ -77,12 +83,26 @@
   border-radius: 4px;
 }
 
+.tarjeta-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(9, 10, 10, 0.13);
+    margin-top: 0.3rem;
+}
+.tarjeta-texto h5{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
 #info_inscripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
   color: white;
+  padding: 4rem 0 4rem;
 }
 
 #info_pasos {
@@ -117,4 +137,65 @@
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: bolder;
+}
+
+#sedes{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    background-color: black;
+    color: white;
+
+}
+
+.sedes-ind{
+display: flex;
+margin:  0 5rem 2rem;
+border: solid white 1px;
+border-radius: 10px;
+padding: 2rem;
+align-items: center;
+color: white;
+
+}
+
+.sedes-ind img{
+    border-radius: 5PX;
+    margin: 0 1rem;
+    height: 200px;
+    
+}
+
+#sedes h3{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#contacto{
+    display: flex;
+    margin: 5rem 0 -4rem;
+    justify-content: center;
+}
+
+.caja-contacto{
+    display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    width: 60%;
+    border:solid blue 2px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    margin: 0 4rem 0 ;
+    height: 10rem;
+    box-shadow: 3px 3px 3px black;
+}
+
+.caja-contacto img{
+   
 }

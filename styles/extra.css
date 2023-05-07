@@ -9,7 +9,7 @@
 #nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 #nav a {
@@ -46,8 +46,12 @@
   align-items: center;
 }
 
-#footer a{
-    margin: 2rem;
+#footer a {
+  margin: 2rem;
+}
+
+#footer :hover {
+  transform: scale(1.05);
 }
 
 #comentarios {
@@ -76,25 +80,33 @@
   border: solid 1px black;
   border-radius: 4px;
   margin: 2rem;
-  padding: 0.5rem;
+  transition: all 250ms ease;
 }
 
 .tarjeta img {
   border-radius: 4px;
 }
 
-.tarjeta-texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(9, 10, 10, 0.13);
-    margin-top: 0.3rem;
+.tarjeta-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(9, 10, 10, 0.13);
+  margin-top: 0.3rem;
+  width: 100%;
 }
-.tarjeta-texto h5{
-    font-size: 30px;
-    font-weight: 900;
+.tarjeta-texto h5 {
+  font-size: 30px;
+  font-weight: 900;
 }
 
+.tarjeta-texto p {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.tarjeta img {
+  margin-top: 0.5rem;
+}
 
 #info_inscripcion {
   display: flex;
@@ -139,60 +151,103 @@
   font-weight: bolder;
 }
 
-#sedes{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4rem;
-    background-color: black;
-    color: white;
-
+#sedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  background-color: black;
+  color: white;
 }
 
-.sedes-ind{
-display: flex;
-margin:  0 5rem 2rem;
-border: solid white 1px;
-border-radius: 10px;
-padding: 2rem;
-align-items: center;
-color: white;
-
+.sedes-ind {
+  display: flex;
+  margin: 0 5rem 2rem;
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 2rem;
+  align-items: center;
+  color: white;
 }
 
-.sedes-ind img{
-    border-radius: 5PX;
-    margin: 0 1rem;
-    height: 200px;
-    
+.sedes-ind img {
+  border-radius: 5px;
+  margin: 0 1rem;
+  height: 200px;
 }
 
-#sedes h3{
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-bottom: 2rem;
-    color: white;
+#sedes h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  color: white;
 }
 
-#contacto{
-    display: flex;
-    margin: 5rem 0 -4rem;
-    justify-content: center;
+#contacto {
+  display: flex;
+  margin: 5rem 0 -4rem;
+  justify-content: center;
 }
 
-.caja-contacto{
-    display: flex;
-   flex-direction: column;
+.caja-contacto {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-    width: 60%;
-    border:solid blue 2px;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    margin: 0 4rem 0 ;
-    height: 10rem;
-    box-shadow: 3px 3px 3px black;
+  width: 60%;
+  border: solid blue 2px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  margin: 0 4rem 0;
+  height: 10rem;
+  box-shadow: 3px 3px 3px black;
 }
 
+.caja-contacto :hover img{
+  transform: scale(1.1);
+}
+
+#info_pasos :hover {
+  color: black;
+  background-color: aliceblue;
+  border: solid black 1px;
+  box-shadow: 1px 1px 3px white;
+  transform: translateY(-4%);
+}
+
+#info_pasos :hover h5 {
+  color: black;
+  background-color: black;
+  color: white;
+}
+
+#info_pasos :hover section {
+  border: none;
+}
+
+#info_pasos :hover p {
+  border: none;
+}
+
+#tarjetas-comentarios :hover {
+  box-shadow: 1px 1px 3px black;
+  transform: translateY(-3%);
+}
+
+#tarjetas-comentarios :hover img {
+  box-shadow: none;
+}
+
+#tarjetas-comentarios :hover section {
+  box-shadow: none;
+  transform: translateY(0%);
+}
+
+#tarjetas-comentarios :hover p {
+  box-shadow: none;
+}
+
+#tarjetas-comentarios :hover h5 {
+  box-shadow: none;
+}

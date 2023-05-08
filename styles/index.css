@@ -44,6 +44,7 @@
 }
 
 h2{
+    text-align: center;
     font-weight: 600;
     margin: 2rem;
     padding: 3rem;
@@ -55,13 +56,14 @@ p{
 
 table{
     text-align: center;
-    margin: 2rem;
+    border: 2px solid black;
+    margin-left: 29rem;
+    padding: 1rem;
     font-weight: 300, bold;
 }
 
 #redes_sociales{
     border: 2px solid rgba(0, 0, 255, 0.295);
-    margin-left: 16rem;
     padding: 1rem;
     max-width: 30rem;
     font-weight: 600;

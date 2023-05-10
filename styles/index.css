@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    background-color: rgb(126, 172, 187);
+    background-color: rgba(187, 126, 172, 0.247);
     font-family: 'Comme', sans-serif;
     
 }
@@ -25,7 +25,7 @@
 #titulo_ppal{
     text-align: center;
     font-family: 'Castoro Titling', cursive;
-    color: rgba(0, 0, 255, 0.863);
+    color: rgba(107, 52, 91, 0.863);
     font-weight: bold;
     font-size: 3rem;
     

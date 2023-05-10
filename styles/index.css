@@ -1,9 +1,20 @@
 *{
     box-sizing: border-box;
+
+    /* esto no iria aca */
     background-color: rgba(187, 126, 172, 0.247);
+
     font-family: 'Comme', sans-serif;
     
 }
+
+
+/* seria asi */
+
+/* body{
+        background-color: rgba(187, 126, 172, 0.247);
+} */
+
 
 
 

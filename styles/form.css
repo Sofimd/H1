@@ -1,14 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+
 }
 
 .contenedor {
-  background-size: contain;
-  height: 100%;
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0.5fr 5fr 0.5fr;
@@ -16,137 +15,126 @@
     "nav nav nav nav"
     "cuerpo cuerpo cuerpo cuerpo"
     "footer footer footer footer";
+    background-color: rgb(224, 219, 219);
+  
+   
 }
 
-.navegador {
-  background-color: rgba(14, 13, 13, 0.226);
+
+#nav {
   grid-area: nav;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-
-
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  background-color: white;
+ 
 }
 
-.principal {
+#nav a {
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+}
+
+#logo img{
+  width: 50px;
+  height: 50px;
+}
+
+#main{
   grid-area: cuerpo;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem 0.5rem 2rem 0.5rem;
 }
 
-.footer {
-  grid-area: footer;
+#main h1{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 1rem;
 }
 
-#titulo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: solid black 1px;
-  border-radius: 5px;
-  background-color:;
-  margin: .5rem;
-  padding: .5rem;
-}
-
-#formulario {
-  background-color: rgba(104, 91, 91, 0.274);
-  border: black solid 1px;
-  border-radius: 5px;
-  margin: 2rem;
-  box-shadow: 2px 2px 10px;
-
-}
-
-#formprincipal{
-  display: flex;
-  flex-direction:column;
-  padding: 2rem;
-
-}
-
-#periodo{
+#titulo{
   display: flex;
   flex-direction: column;
-  padding: .5rem;
-  margin: .5rem;
-  justify-content: space-evenly;
+}
+
+#titulo h2{
+margin-bottom: .1rem;
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-img{
-  border: black solid 1px;
-  border-radius: 90px;
+#form-principal{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem .5rem 2rem .5rem ;
 }
 
-nav a{
-
-  margin: .5rem;
-
+#boton{
+  background-color: rgb(26, 22, 22);
+  color: white;
+  font-size: 20px;
+  padding: .7rem 1.5rem;
+  border-radius: 5px;
+  box-shadow:3px 5px 5px 2px black;
 }
 
-h1{
+fieldset{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+}
+
+fieldset section{
   margin-top: 1rem;
-  font-size: 3rem;
-  text-shadow:rgba(207, 204, 204, 0.514) 4px 4px ;
 
 }
 
-input,
-textarea {
-  border: none;
-  border-radius: 2px;
-  box-shadow: 4px 8px 10px black;
-  margin: 0.6em 0;
-  line-height: 1.5em;
-max-width: 20rem;
-  color: black;
-  
-}
-
-footer {
-  background-color: rgba(14, 13, 13, 0.226);
+#footer{
   grid-area: footer;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-
-
+  background-color: black;
+  padding: 2rem 0 2rem;
 }
 
-footer a {
-  margin: .5rem;
+#footer a{
+  margin: 0 1rem ;
 }
 
-form fieldset{
+
+
+#caja-mensaje p{
+  font-size: medium;
+ border-radius: 5px;
+}
+
+.success{
+  background-color: rgb(129, 189, 40);
+   border: 1px black solid;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.fail{
+  background-color: red;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin-top: .5rem;
   padding: .5rem;
-  margin: .5rem;
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- align-items: baseline;
- 
-
-}
-
-form fieldset label{
-  margin: .5rem;
-}
-
-
-button{
-border: 2px solid black;
-margin: 1.5rem;
-padding: 1rem;
-font-size: 20px
-}
-
-button:hover{
-  font: bold;
-  color: blue;
-  transform: scale(1.1, 1.1);
+  color: white;
+  font-weight: 900;
 }
 

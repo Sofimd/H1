@@ -10,77 +10,116 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
 
+<link
+href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@200&display=swap"
+rel="stylesheet"
+/>
+
+
+
 <title>inscripcion</title>
 </head>
 <body class="contenedor">
 
+  <nav id="nav" class="navegador">
+    <section id="logo">
+      <img
+        src="./imagenes/logo paz.jpg"
+        alt="logo"
+        
+      />
+    </section>
+    <section id="links">
+      <a href="./index.html">inicio</a>
+   
+    </section>
+  </nav>
 
-        <nav class="navegador">
-<a href="index.html"><button>Pagina Principal</button></a>
-
-        </nav>
 
 
 
-<section class="principal">
+<section id="main">
 
 <h1>Colegio Paz</h1>
 <section id="formulario">
 
 <section id="titulo">
-  <img src="./imagenes/logo paz.jpg" alt="logo" width="100" height="100">
-  <section id="periodo">
+  
+
     <h2>formulario de inscripcion</h2>
     <h3>año escolar 2023</h3>
-  </section>
+
 
 </section>
    
   
-    <form id="formprincipal" action="/formulario" method="post">
+    <form id="form-principal">
         <fieldset>
-          <legend>Datos Personales</legend>
-
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder=""required>
-
-          <label for="lastname">Apellido</label>
+          <legend>Datos Personales:</legend>
+<section>
+  <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name"  required>
+</section>
+          
+<section>
+   <label for="lastname">Apellido:</label>
           <input type="text" id="lastname" name="lastname" maxlength="100" required/>
-
-          <label for="dni">DNI</label>
+</section>
+<section>
+  <label for="dni">DNI:</label>
           <input type="number" id="dni" name="dni" min="0" required />
-
-          <label for="email">E-Mail</label>
+</section>
+         
+<section>
+  <label for="email">E-Mail:</label>
           <input type="email" id="email" name="email" required />
-
-          <label for="nacimiento">Fecha de Nacimiento</label>
+</section>
+<section>
+      <label for="nacimiento">Fecha de Nacimiento:</label>
           <input
             type="date"
             id="nacimiento"
             name="nacimiento"
             placeholder=""
             required
+           
           />
+</section>
+          
 
         
         </fieldset>
 
-       
+           <section id="caja-mensaje">
+      <p id="mensaje"></p>
+    </section>
+   </section>
+     <button id="boton" type="button" onclick="validarForm()">Enviar</button>
+    </section>
+
+
+
+
       </form>
 
-    </section>
-     <button type="submit">Enviar</button>
-    </section>
+ 
 
     
-        <footer>
-          <a href="#">Youtube</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          
-        </footer>
+    <footer id="footer">
+      <section>
+        <a href="http://"
+          ><img src="./imagenes/instagram.png" alt="" width="50"
+        /></a>
+        <a href="http://"
+          ><img src="./imagenes/whatsapp.png" alt="" width="50"
+        /></a>
+        <a href="http://"
+          ><img src="./imagenes/facebook.png" alt="" width="50"
+        /></a>
+      </section>
+    </footer>
   
 
-     
+     <script src="./js/form.js"></script>
 </body>
 </html>

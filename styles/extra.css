@@ -26,6 +26,11 @@
   max-height: 300px;
 }
 
+#carrusel img{
+  width: 100%;
+  height:fit-content;
+}
+
 .carousel-caption h5 {
   font-size: 2rem;
   color: white;
@@ -84,7 +89,7 @@
 }
 
 .tarjeta img {
-  border-radius: 4px;
+  border-radius: 90px;
 }
 
 .tarjeta-texto {
@@ -251,3 +256,117 @@
 #tarjetas-comentarios :hover h5 {
   box-shadow: none;
 }
+
+#logo img{
+  width: 50px;
+  height: 50px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:600px) {
+
+ nav{
+  flex-direction: column;
+ }
+  
+#logo img{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.carousel-caption h5{
+  font-size: 1.5rem;
+ 
+}
+
+.carousel-caption p{
+  font-size: 1rem;
+  margin-bottom: -1rem;
+}
+
+#links{
+  flex-direction: column;
+}
+
+#info_inscripcion{
+  flex-direction: column;
+text-align: center;
+}
+
+#info_inscripcion h3{
+  margin-top: -1rem;
+  text-align: center;
+  font-size:2rem;
+}
+
+#info_pasos{
+  flex-direction: column;
+}
+
+#comentarios{
+flex-direction: column;
+}
+
+#comentarios h2{
+  margin-top: -1rem;
+  text-align: center;
+  font-size:2rem;
+}
+
+#tarjetas-comentarios{
+  flex-direction: column;
+}
+
+.tarjeta{
+  max-width: 45vw;
+}
+
+#sedes{
+  flex-direction: column;
+}
+
+.sedes-ind{
+  flex-direction: column;
+}
+
+.sedes-ind img{
+  width: 80vw ;
+  margin-bottom: 20px;
+}
+
+#sedes h3{
+  margin-top: -1rem;
+  text-align: center;
+  font-size:2rem;
+}
+
+footer img{
+  width: 2rem;
+}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+  #tarjetas-comentarios{
+    flex-wrap: wrap;
+  }
+
+  .tarjeta{
+    max-width: 45vw;
+  }
+  
+  .sedes-ind{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #info_pasos{
+    min-width: 40vw;
+  }
+
+}
+
+

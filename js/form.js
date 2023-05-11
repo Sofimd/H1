@@ -64,6 +64,7 @@ const validarForm = () => {
 
   if (validationResult == true) {
     mensaje = "todo ok!!!";
+    cajaMensaje.classList.remove("fail");
     cajaMensaje.classList.add("success");
     p.innerHTML = mensaje;
   }

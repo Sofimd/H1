@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegio Paz</title>
 
-<!-- este link iria mas abajo  -->
-    <link rel="stylesheet" href="./styles/index.css">
 
     <link rel="shortcut icon" href="./imagenes/logo paz.jpg" type="image/x-icon">
  
@@ -40,20 +38,15 @@
         }
     </style>
     
-<!-- 
-    deberia ir aca -->
 
-    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
-
-
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 
-<!-- cambiar el de los botones id por class aca y en CSS -->
 
 <body>
-    <a href="./form.html"><button id="insc_button">Inscripción</button></a>
-    <a href="./extra.html"><button id="insc_button">Actividades</button></a>
+    <a href="./form.html"><button class="insc_button">Inscripción</button></a>
+    <a href="./extra.html"><button class="insc_button">Actividades</button></a>
     
     <header>
         <h1 id="titulo_ppal">Colegio Paz</h1>
@@ -118,29 +111,29 @@
                 <h2>Talleres extracurriculares</h2>
                 <table>
                     <tr>
-                        <th>Horario</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miercoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
+                        <th class="dias">Horario</th>
+                        <th class="dias">Lunes</th>
+                        <th class="dias">Martes</th>
+                        <th class="dias">Miercoles</th>
+                        <th class="dias">Jueves</th>
+                        <th class="dias">Viernes</th>
                     </tr>
                     <tr>
-                        <th>14 a 16</th>
-                        <td>Inglés I</td>
-                        <td>Coro</td>
-                        <td>Inglés III</td>
-                        <td>Taekwondo</td>
-                        <td>Ajedrez</td>
+                        <th class="horarios_1">14 a 16</th>
+                        <td class="horarios_1">Inglés I</td>
+                        <td class="horarios_1">Coro</td>
+                        <td class="horarios_1">Inglés III</td>
+                        <td class="horarios_1">Taekwondo</td>
+                        <td class="horarios_1">Ajedrez</td>
                     </tr>
 
                     <tr>
-                        <th>16 a 18</th>
-                        <td>Voley</td>
-                        <td>Inglés II</td>
-                        <td>Teatro</td>
-                        <td>Fútbol</td>
-                        <td>Danza</td>
+                        <th class="horarios_2">16 a 18</th>
+                        <td class="horarios_2">Voley</td>
+                        <td class="horarios_2">Inglés II</td>
+                        <td class="horarios_2">Teatro</td>
+                        <td class="horarios_2">Fútbol</td>
+                        <td class="horarios_2">Danza</td>
                 
 
 
@@ -148,7 +141,8 @@
 
 
                 </table>
-            </section>
+            </section> 
+
 
             <section>
                 <h2>Pasos para inscribirse</h2>
@@ -175,24 +169,24 @@
 
     </main>
 
-<!-- en el footer no deberia ir la etiqua nav -->
-
-    <footer>
+    <footer id="footer_info">
 
         <section id="redes_sociales">
             <h2>Redes sociales</h2>
             
-            <nav>
+
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
-           </nav>
+
 
            </section>
+        
+    <section>
+        
+        <a id="ir_inicio" href= "class= insc_button">Ir al inicio</a>
 
-        <nav id="ir_inicio">
-            <a href="#titulo_ppal">Ir al inicio</a>
-        </nav>
+    </section>
     </footer>
 </body>
 </html>

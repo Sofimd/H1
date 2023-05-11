@@ -1,24 +1,15 @@
 *{
     box-sizing: border-box;
-
-    /* esto no iria aca */
-    background-color: rgba(187, 126, 172, 0.247);
-
     font-family: 'Comme', sans-serif;
-    
 }
 
 
-/* seria asi */
-
-/* body{
+body{
         background-color: rgba(187, 126, 172, 0.247);
-} */
+}
 
 
-
-
-#insc_button{
+.insc_button{
   border: 2px solid black;
   margin: 1.5rem;
   padding: 1rem;
@@ -26,21 +17,15 @@
   font-size: 20px
 }
 
-#insc_button:hover{
-    font: bold;
-    color: #fff;
-    transform: scale(1.1, 1.1);
-}
-
-
 #titulo_ppal{
     text-align: center;
     font-family: 'Castoro Titling', cursive;
     color: rgba(107, 52, 91, 0.863);
     font-weight: bold;
-    font-size: 3rem;
-    
+    font-size: 5rem;
+   
 }
+
 
 .carousel-inner{
     margin: 8rem;
@@ -51,7 +36,7 @@
     height: 700px;
     text-align: center;
     margin: 1rem, 1rem, 1rem, 1rem;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 h2{
@@ -68,22 +53,48 @@ p{
 table{
     text-align: center;
     border: 2px solid black;
-    margin-left: 29rem;
+    margin: 0 auto;
     padding: 1rem;
     font-weight: 300, bold;
+    align-content: center;   
+} 
+
+.dias{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.horarios_1{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.horarios_2{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#footer_info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 #redes_sociales{
-    border: 2px solid rgba(0, 0, 255, 0.295);
+    border: 2px solid rgba(187, 126, 172, 0.897);
+    margin: 0 auto;
     padding: 1rem;
-    max-width: 30rem;
     font-weight: 600;
 }
 
 .fa-brands{
-    color:blue;
+    color:rgb(187, 80, 160);
     font-size: 2rem;
+    margin: 2rem;
     padding: 1rem;
+    
 }
 
 .fa-brands:hover{
@@ -91,7 +102,6 @@ table{
     color: #fff;
     font: bold;
 }
-
 
 
 #ir_inicio{

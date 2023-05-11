@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-
 }
 
 .contenedor {
@@ -15,11 +14,8 @@
     "nav nav nav nav"
     "cuerpo cuerpo cuerpo cuerpo"
     "footer footer footer footer";
-    background-color: rgb(224, 219, 219);
-  
-   
+  background-color: rgb(224, 219, 219);
 }
-
 
 #nav {
   grid-area: nav;
@@ -27,7 +23,6 @@
   justify-content: space-between;
   padding-bottom: 0.5rem;
   background-color: white;
- 
 }
 
 #nav a {
@@ -40,12 +35,12 @@
   align-items: center;
 }
 
-#logo img{
+#logo img {
   width: 50px;
   height: 50px;
 }
 
-#main{
+main {
   grid-area: cuerpo;
   display: flex;
   flex-direction: column;
@@ -53,55 +48,63 @@
   margin: 2rem 0.5rem 2rem 0.5rem;
 }
 
-#main h1{
+main h1 {
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
-#titulo{
+#titulo {
   display: flex;
   flex-direction: column;
 }
 
-#titulo h2{
-margin-bottom: .1rem;
+#titulo h2 {
+  margin-bottom: 0.1rem;
 }
 
-#formulario{
+#formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-#form-principal{
-  display: flex;
+#form-principal {
   flex-direction: column;
-  margin: 2rem .5rem 2rem .5rem ;
+  margin: 2rem;
 }
 
-#boton{
+#form-principal section {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+#form-principal section input {
+  margin-left: 2rem;
+  text-decoration: none;
+  background-color: rgba(172, 187, 187, 0.219);
+  border-radius: 4px;
+  height: 1.5rem;
+  min-width: 12rem;
+}
+
+fieldset {
+  border: none;
+}
+
+#boton {
   background-color: rgb(26, 22, 22);
   color: white;
   font-size: 20px;
-  padding: .7rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 5px;
-  box-shadow:3px 5px 5px 2px black;
-}
-
-fieldset{
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0.5rem 2rem 0.5rem;
-}
-
-fieldset section{
+  box-shadow: 3px 5px 5px 2px black;
   margin-top: 1rem;
-
 }
 
-#footer{
+#footer {
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -109,32 +112,70 @@ fieldset section{
   padding: 2rem 0 2rem;
 }
 
-#footer a{
-  margin: 0 1rem ;
+#footer a {
+  margin: 0 1rem;
 }
 
-
-
-#caja-mensaje p{
+#caja-mensaje p {
   font-size: medium;
- border-radius: 5px;
-}
-
-.success{
-  background-color: rgb(129, 189, 40);
-   border: 1px black solid;
   border-radius: 5px;
-  margin-top: 1rem;
-  font-weight: 900;
 }
 
-.fail{
+.success {
+  background-color: rgb(27, 226, 27);
+  border: 1px black solid;
+  border-radius: 5px;
+  margin: 2rem 0 1rem;
+  font-weight: 900;
+  padding: 1rem 4rem;
+  font-weight: bolder;
+  box-shadow: 1px 2px 4px black;
+}
+
+.fail {
   background-color: red;
   border: 1px black solid;
   border-radius: 5px;
-  margin-top: .5rem;
-  padding: .5rem;
+  margin: 2rem 0 1rem;
+  padding: 0.5rem;
   color: white;
   font-weight: 900;
+  box-shadow: 1px 2px 4px black;
 }
 
+#caja-form {
+  display: flex;
+  width: 80%;
+  border: solid 2px black;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.432);
+}
+
+#caja-form img {
+  object-fit: cover;
+  width: 40%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+@media screen and (min-width: 390px) and (max-width: 745px) {
+  #caja-form img {
+    display: none;
+  }
+
+  #caja-form {
+    display: flex;
+    width: 100%;
+    border: solid 2px black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.432);
+  }
+}
+
+@media  screen and (max-width:389px) {
+  #caja-form img {
+    display: none;
+  }
+
+
+}

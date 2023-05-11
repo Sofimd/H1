@@ -1,110 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/form.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
-<link
-href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@200&display=swap"
-rel="stylesheet"
-/>
+    <title>inscripcion</title>
+  </head>
+  <body class="contenedor">
+    <nav id="nav" class="navegador">
+      <section id="logo">
+        <img src="./imagenes/logo paz.jpg" alt="logo" />
+      </section>
+      <section id="links">
+        <a href="./index.html">inicio</a>
+      </section>
+    </nav>
 
-
-
-<title>inscripcion</title>
-</head>
-<body class="contenedor">
-
-  <nav id="nav" class="navegador">
-    <section id="logo">
-      <img
-        src="./imagenes/logo paz.jpg"
-        alt="logo"
-        
-      />
-    </section>
-    <section id="links">
-      <a href="./index.html">inicio</a>
-   
-    </section>
-  </nav>
-
-
-
-
-<section id="main">
-
-<h1>Colegio Paz</h1>
-<section id="formulario">
-
-<section id="titulo">
-  
-
-    <h2>formulario de inscripcion</h2>
-    <h3>año escolar 2023</h3>
-
-
-</section>
-   
-  
-    <form id="form-principal">
-        <fieldset>
-          <legend>Datos Personales:</legend>
-<section>
-  <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name"  required>
-</section>
+    <main id="main">
+      <h1>Colegio Paz</h1>
+      <section id="formulario">
+        <section id="titulo">
           
-<section>
-   <label for="lastname">Apellido:</label>
-          <input type="text" id="lastname" name="lastname" maxlength="100" required/>
-</section>
-<section>
-  <label for="dni">DNI:</label>
-          <input type="number" id="dni" name="dni" min="0" required />
-</section>
+          
+        </section>
+<section id="caja-form">
+
+  <img src="./imagenes/caja_form_img.jfif" alt="">
+
+  
+
+ <form id="form-principal">
+      <fieldset>
+        <legend>
+          <h2>formulario de inscripcion</h2>
+          <h3>año escolar 2023</h3>
+        </legend>
+
+         <section>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required />
+            </section>
+
+            <section>
+              <label for="lastname">Apellido:</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                maxlength="100"
+                required
+              />
+            </section>
+            <section>
+              <label for="dni">DNI:</label>
+              <input type="number" id="dni" name="dni" min="0" required />
+            </section>
+
+            <section>
+              <label for="email">E-Mail:</label>
+              <input type="email" id="email" name="email" required />
+            </section>
+            <section>
+              <label for="nacimiento">Fecha de Nac:</label>
+              <input
+                type="date"
+                id="nacimiento"
+                name="nacimiento"
+             
+                required
+              />
+            </section>
+
+<button id="boton" type="button" onclick="validarForm()">Enviar</button>
+       
          
-<section>
-  <label for="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required />
-</section>
-<section>
-      <label for="nacimiento">Fecha de Nacimiento:</label>
-          <input
-            type="date"
-            id="nacimiento"
-            name="nacimiento"
-            placeholder=""
-            required
+        </form>
+      </fieldset>
            
-          />
+
 </section>
-          
-
-        
-        </fieldset>
-
-           <section id="caja-mensaje">
-      <p id="mensaje"></p>
-    </section>
-   </section>
-     <button id="boton" type="button" onclick="validarForm()">Enviar</button>
-    </section>
+       
 
 
+        <section id="caja-mensaje">
+          <p id="mensaje"></p>
+        </section>
+      </section>
+      
+    </main>
 
-
-      </form>
-
- 
-
-    
     <footer id="footer">
       <section>
         <a href="http://"
@@ -118,8 +115,7 @@ rel="stylesheet"
         /></a>
       </section>
     </footer>
-  
 
-     <script src="./js/form.js"></script>
-</body>
+    <script src="./js/form.js"></script>
+  </body>
 </html>

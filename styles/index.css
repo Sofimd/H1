@@ -1,31 +1,31 @@
 *{
     box-sizing: border-box;
     font-family: 'Comme', sans-serif;
+    margin: 0;
 }
+
+/*header*/
 
 header{
-    background-color: rgba(187, 126, 172, 0.801);
+    background-color: rgba(126, 154, 187, 0.534);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
 }
 
-body{
-        background-color: rgba(187, 126, 172, 0.247);
-}
-
-
-#botones_inicio{
-    margin: 1rem;
-}
 
 #logo_inicio{
-    max-width: 10%;
+    width: 80px;
+    height: 80px;
     float: right;
-    margin: 1rem;
+    margin: 0.5rem;
+    
 }
 
 .insc_button{
   border: 2px solid black;
-  background-color:  rgba(107, 52, 92, 0.459);
-  margin: 1.5rem;
+  background-color:   rgba(94, 137, 187, 0.801);
+  margin: 0.5rem;
   padding: 1rem;
   font-weight: 300;
   font-size: 20px
@@ -33,31 +33,52 @@ body{
 
 .insc_button:hover{
     text-decoration: none;
-    color: #834f80;
+    color:  rgba(8, 73, 148, 0.644);
     font: bold;
 }
 
+/*main*/
 
+body{
+    background-color: rgba(166, 187, 211, 0.336);
+}
 
 #titulo_ppal{
     text-align: center;
     font-family: 'Castoro Titling', cursive;
-    color: rgba(107, 52, 91, 0.863);
+    color: rgba(66, 114, 168, 0.801);
     font-weight: bold;
+    text-decoration: underline;
     font-size: 5rem;
+    margin: 1rem;
+    padding: 1rem;
    
 }
 
 
+#carouselExample{
+    max-height: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
 
 .carousel-item{
-    height: 700px;
-    text-align: center;
     margin: 1rem;
     padding: 1rem;
-    max-width: 50%;
-} 
 
+}  
+
+/*.carousel-control-prev:hover{
+    color: #000;
+    font: bold;
+}
+
+.carousel-control-next:hover{
+    color: #000;
+    font: bold;
+} */
 
 /*.carousel-slide{
     width: 100%;
@@ -88,19 +109,40 @@ h2{
     text-align: center;
     font-weight: 600;
     margin: 2rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
-ul{
+/*ul{
     margin-left: 4rem;
     font-weight:400;
 
 
+} */
+
+#articles_section{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#articles_section article{
+    border: 1px solid #000;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem 1rem;
+    width: 90%;
+    max-width: 22rem;
+    height: 30rem;
+    border-radius: 1rem;
+    overflow: auto;
 }
 
 p{
     font-weight: 100, bold;
 }
+
+/*table*/
 
 table{
     text-align: center;
@@ -126,25 +168,61 @@ table{
     padding: 2rem;
 }
 
-#footer_info{
+/*articles_section2*/
+
+#articles_section2{
+    padding: 1rem;
     display: flex;
-    text-align: center;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+#articles_section2 article{
+    border: 1px solid #000;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 90%;
+    max-width: 25rem;
+    height: 36.5rem;
+    border-radius: 1rem;
+    overflow: auto;
+    /*transform: scale(1rem);*/
+}
+
+#articles_section2 img{
+    max-width: 85%;
+}
+
+/*@keyframes #articles_section2 {
+    
+}
+*/
+#mapa{
+width: 20rem;
+height: 20rem;
+}
+
+#footer_info{
+    border: 2px solid rgba(66, 114, 168, 0.801);
+    height: 10rem;
+
     
 }
 
 #redes_sociales{
-    border: 2px solid rgba(187, 126, 172, 0.897);
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
     padding: 1rem;
     font-weight: 600;
 }
 
 .fa-brands{
-    color:rgb(187, 80, 160);
+    color:rgba(66, 114, 168, 0.801);
     font-size: 2rem;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
     
 }
@@ -167,3 +245,7 @@ table{
     color: #fff;
     font: bold; 
 }
+
+@media screen {
+    
+} 

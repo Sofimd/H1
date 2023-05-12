@@ -8,14 +8,33 @@ body{
         background-color: rgba(187, 126, 172, 0.247);
 }
 
+#botones_inicio{
+    margin: 1rem;
+    background-color: #834f8096;
+}
+
+#logo_inicio{
+    max-width: 10%;
+    float: right;
+    margin: 1rem;
+}
 
 .insc_button{
   border: 2px solid black;
+  background-color:  rgba(107, 52, 92, 0.459);
   margin: 1.5rem;
   padding: 1rem;
   font-weight: 300;
   font-size: 20px
 }
+
+.insc_button:hover{
+    text-decoration: none;
+    color: #834f80;
+    font: bold;
+}
+
+
 
 #titulo_ppal{
     text-align: center;
@@ -29,13 +48,13 @@ body{
 
 .carousel-inner{
     margin: 8rem;
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .carousel-item{
     height: 700px;
     text-align: center;
-    margin: 1rem, 1rem, 1rem, 1rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -44,6 +63,13 @@ h2{
     font-weight: 600;
     margin: 2rem;
     padding: 3rem;
+}
+
+ul{
+    margin-left: 4rem;
+    font-weight:400;
+
+
 }
 
 p{

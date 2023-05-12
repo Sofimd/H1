@@ -3,14 +3,17 @@
     font-family: 'Comme', sans-serif;
 }
 
+header{
+    background-color: rgba(187, 126, 172, 0.801);
+}
 
 body{
         background-color: rgba(187, 126, 172, 0.247);
 }
 
+
 #botones_inicio{
     margin: 1rem;
-    background-color: #834f8096;
 }
 
 #logo_inicio{
@@ -46,17 +49,40 @@ body{
 }
 
 
-.carousel-inner{
-    margin: 8rem;
-    max-width: 60%;
-}
 
 .carousel-item{
     height: 700px;
     text-align: center;
     margin: 1rem;
     padding: 1rem;
-}
+    max-width: 50%;
+} 
+
+
+/*.carousel-slide{
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  .carousel-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+.carousel-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+  
 
 h2{
     text-align: center;

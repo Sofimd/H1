@@ -130,12 +130,13 @@ h2{
     border: 1px solid #000;
     text-align: center;
     margin: 2rem;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     width: 90%;
-    max-width: 22rem;
-    height: 30rem;
+    max-width: 33rem;
+    height: 36.5rem;
     border-radius: 1rem;
     overflow: auto;
+
 }
 
 p{
@@ -171,7 +172,8 @@ table{
 /*articles_section2*/
 
 #articles_section2{
-    padding: 1rem;
+    margin: 1rem;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

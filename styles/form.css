@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-family: "Comme", sans-serif;
 }
 
 .contenedor {
@@ -17,18 +16,26 @@
   background-color: rgb(224, 219, 219);
 }
 
+
+
 #nav {
   grid-area: nav;
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.5rem;
   background-color: white;
+  font-weight: 900;
 }
 
 #nav a {
   margin-right: 2rem;
   text-decoration: none;
 }
+
+#nav :hover a{
+  transform: scale(10rem);
+}
+
 
 #links {
   display: flex;
@@ -84,10 +91,11 @@ main h1 {
 #form-principal section input {
   margin-left: 2rem;
   text-decoration: none;
-  background-color: rgba(172, 187, 187, 0.219);
+  background-color: rgba(187, 126, 172, 0.247);
   border-radius: 4px;
   height: 1.5rem;
   min-width: 12rem;
+ 
 }
 
 fieldset {
@@ -95,14 +103,17 @@ fieldset {
 }
 
 #boton {
-  background-color: rgb(26, 22, 22);
+  background-color: rgb(62, 14, 194);
   color: white;
   font-size: 20px;
   padding: 0.5rem 1.2rem;
-  border-radius: 5px;
-  box-shadow: 3px 5px 5px 2px black;
+  border-radius: 90px;
+  box-shadow: 5px 4px 5px black;
   margin-top: 1rem;
+  width: 14rem;
 }
+
+
 
 #footer {
   grid-area: footer;
@@ -158,6 +169,14 @@ fieldset {
   border-bottom-left-radius: 30px;
 }
 
+#footer a {
+  margin: 2rem;
+}
+
+#footer :hover {
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 390px) and (max-width: 745px) {
   #caja-form img {
     display: none;
@@ -172,10 +191,8 @@ fieldset {
   }
 }
 
-@media  screen and (max-width:389px) {
+@media screen and (max-width: 389px) {
   #caja-form img {
     display: none;
   }
-
-
 }

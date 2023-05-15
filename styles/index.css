@@ -56,6 +56,10 @@ body{
    
 }
 
+#titulo_ppal:hover {
+    transform: scale(1.1, 1.1);
+}
+
 
 #carouselExample{
     margin: 2rem;

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Comme', sans-serif;
+}
+
+header{
+    background-color: rgba(126, 154, 187, 0.534);
+    margin: 0;
+    padding: 2rem;
+}
+
+body{
+    background-color: rgba(166, 187, 211, 0.336);
+}
+
+footer{
+    margin: 0;
+    background-color: rgba(94, 137, 187, 0.801);
+    min-width: 772px;
+    display: flex;
+ 
+
+}
+
+#footer_info{
+    display: flex;
+    flex-direction: column;
+    margin: 0;   
+    align-items: center;
+}
+
+#footer_info h2{
+    margin: 0;
+    padding: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+
+}
+
+
+#logo_inicio{
+    width: 50px;
+    height: 50px;
+    margin-bottom: .5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insc_button{
+    border: 2px solid black;
+    background-color: rgba(94, 137, 187, 0.801);
+    font-weight: 300;
+    font-size: 20px
+  }
+
+  .insc_button:hover{
+    text-decoration: none;
+    color:  rgba(8, 73, 148, 0.644);
+    font: bold;
+}
+
+#redes_sociales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fa-brands{
+    color:rgba(48, 83, 122, 0.801);
+    padding: 1rem; 
+    font-size: 2rem;
+}
+
+.fa-brands:hover{
+    text-decoration: none;
+    color: #fff;
+    font: bold;
+}
+
+
+main{
+    border: solid 1px black;
+    border-radius: 4px;
+    margin: 2rem 4rem 2rem 4rem;
+    padding: 1rem;
+    background-color: rgba(48, 82, 122, 0.308);;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}

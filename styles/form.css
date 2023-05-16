@@ -16,8 +16,6 @@
   background-color: rgb(224, 219, 219);
 }
 
-
-
 #nav {
   grid-area: nav;
   display: flex;
@@ -32,10 +30,9 @@
   text-decoration: none;
 }
 
-#nav :hover a{
+#nav :hover a {
   transform: scale(10rem);
 }
-
 
 #links {
   display: flex;
@@ -95,7 +92,6 @@ main h1 {
   border-radius: 4px;
   height: 1.5rem;
   min-width: 12rem;
- 
 }
 
 fieldset {
@@ -113,7 +109,9 @@ fieldset {
   width: 14rem;
 }
 
-
+#boton:hover {
+  transform: scale(1.05);
+}
 
 #footer {
   grid-area: footer;
@@ -194,5 +192,17 @@ fieldset {
 @media screen and (max-width: 389px) {
   #caja-form img {
     display: none;
+  }
+
+  #form-principal section {
+    flex-direction: column;
+  }
+
+  #form-principal section input {
+    margin: 0;
+  }
+
+  #boton {
+    margin-top: 2rem;
   }
 }

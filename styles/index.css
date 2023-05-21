@@ -20,12 +20,13 @@ header{
 
 
 #logo_inicio{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     top: 20px;
     right: 5px;
 }
+
 
 .insc_button{
   border: 2px solid black;
@@ -33,13 +34,13 @@ header{
   margin: 1rem;
   font-weight: 300;
   font-size: 20px;
-  justify-content: center;
 }
 
 .insc_button:hover{
     text-decoration: none;
     color:  rgba(8, 73, 148, 0.644);
     font: bold;
+    transform: scale(1.01, 1.01);
 }
 
 /*main*/
@@ -56,66 +57,15 @@ body{
     font-weight: bold;
     text-decoration: underline;
     font-size: 4rem;
+
    
 }
 
 #titulo_ppal:hover {
-    transform: scale(1.01, 1.01);
+    transform: translateY(8px);
 }
   
 
-/* #carouselExample{
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center; 
-    
-
-} */
-
-/* .carousel-inner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    max-width: 800px;
-
-} */
-
-/*.carousel-control-prev:hover{
-    color: #000;
-    font: bold;
-}
-
-.carousel-control-next:hover{
-    color: #000;
-    font: bold;
-} */
-
-/*.carousel-slide{
-    width: 100%;
-    height: 300px;
-    position: relative;
-  }
-  
-  .carousel-item{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-
-.carousel-item{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  } */
   
 
 h2{
@@ -125,12 +75,8 @@ h2{
     padding: 2rem;
 }
 
-/*ul{
-    margin-left: 4rem;
-    font-weight:400;
 
-
-} */
+/*articles_section1*/
 
 #articles_section1{
     padding: 1rem;
@@ -186,7 +132,6 @@ table{
 /*articles_section2*/
 
 #articles_section2{
-    /*margin: 1rem;*/
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -217,23 +162,29 @@ table{
 
 
 .mapa_container{
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
+    width: 265px;
+    height: 265px;
+    overflow:hidden;
+    margin: auto;
+    
     
     
 }
 
 .mapa_container iframe{
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
+
+    
     
 }
 
 #articles_section2 h4{
-margin: 1rem;
+margin: 2rem;
+font-weight: bold;
 }
 
+/*footer*/
 
 footer{
     margin: 0;
@@ -241,7 +192,6 @@ footer{
     min-width: 360px;
     width: 100%;
   
-    
 }
 
 
@@ -291,20 +241,6 @@ footer{
     font: bold; 
 } 
 
-/*@media screen and (max-width: 445px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        justify-content: space-between;
-    }
-
-    #logo_inicio{
-        margin-right: 0;
-    }
-
-    
-  } */
 
   @media screen and (min-widht: 360px) and (max-widht: 772px) {
 
@@ -330,26 +266,6 @@ footer{
         text-align: center;
         
     }
-
-
-
-  
-  /*@media screen and (max-width: 772px) {
-    #titulo_ppal{
-        margin-left: 180px;
-        text-align: center;
-    }
-
-
-  }*/
-
-
-  
-
-
-
-
-
 
   
   .container-carrusel{

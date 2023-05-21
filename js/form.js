@@ -44,6 +44,8 @@ const validarForm = () => {
   const cajaMensaje = document.getElementById("caja-mensaje");
   const p = document.getElementById("mensaje");
 
+ 
+
   let mensNac = "";
   if (!fnac) {
     mensNac = "ingrese su fecha de Nacimiento <br>";
@@ -69,3 +71,4 @@ const validarForm = () => {
     p.innerHTML = mensaje;
   }
 };
+

@@ -11,17 +11,20 @@ header{
     padding: 2rem;
     position: sticky;
     top: 0;
-    min-width: 772px;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     z-index: 2;
 }
 
 
 #logo_inicio{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 5px;
 }
 
 .insc_button{
@@ -29,7 +32,8 @@ header{
   background-color: rgba(94, 137, 187, 0.801);
   margin: 1rem;
   font-weight: 300;
-  font-size: 20px
+  font-size: 20px;
+  justify-content: center;
 }
 
 .insc_button:hover{
@@ -45,28 +49,38 @@ body{
 }
 
 #titulo_ppal{
+    padding: 1rem;
     text-align: center;
     font-family: 'Castoro Titling', cursive;
     color: rgba(66, 114, 168, 0.801);
     font-weight: bold;
     text-decoration: underline;
     font-size: 4rem;
-    margin: 1rem;
-    padding: 1rem;
    
 }
 
 #titulo_ppal:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.01, 1.01);
 }
-
+  
 
 #carouselExample{
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
-    max-height: 600px;
-    max-width: 700px;
-    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    
+
+}
+
+.carousel-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    max-width: 800px;
+
 
 }
 
@@ -121,7 +135,9 @@ h2{
 
 #articles_section1{
     padding: 1rem;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #articles_section1 article{
@@ -146,10 +162,12 @@ p{
 table{
     text-align: center;
     margin: 0 auto;
-    font-weight: 300, bold;
-    width: 50%;
-     
+    font-weight: 300, bold; 
 } 
+
+#table_horarios{
+    overflow: auto;
+}
 
 .dias{
     margin: 2rem;
@@ -169,8 +187,8 @@ table{
 /*articles_section2*/
 
 #articles_section2{
-    margin: 1rem;
-    padding: 2rem;
+    /*margin: 1rem;*/
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -178,19 +196,24 @@ table{
 
 #articles_section2 article{
     border: 1px solid rgba(66, 114, 168, 0.801);
-    text-align: center;
+    text-align:center;
     margin: 2rem;
-    padding: 0.5rem;
+    padding: 1rem 1 rem;
     width: 90%;
-    max-width: 25rem;
-    height: 36.5rem;
+    max-width: 30rem;
+    height: 40rem;
     border-radius: 1rem;
     overflow: auto;
-    /*transform: scale(1rem);*/
 }
 
 #articles_section2 img{
     max-width: 85%;
+    
+}
+
+#articles_section2 a{
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /*@keyframes #articles_section2 {
@@ -205,7 +228,8 @@ max-height: 20rem;
 footer{
     margin: 0;
     background-color: rgba(94, 137, 187, 0.801);
-    min-width: 772px;
+    min-width: 360px;
+    width: 100%;
   
     
 }
@@ -265,11 +289,12 @@ footer{
     font: bold; 
 } 
 
-@media screen and (max-width: 445px) {
+/*@media screen and (max-width: 445px) {
     header{
         display: flex;
         flex-direction: column;
         text-decoration: none;
+        justify-content: space-between;
     }
 
     #logo_inicio{
@@ -277,14 +302,52 @@ footer{
     }
 
     
-  }
+  } */
 
-  @media screen and (max-width: 772px) {
+  @media screen and (min-widht: 360px) and (max-widht: 772px) {
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #titulo_ppal{
+        text-align: center;
+    }
+
+    #carouselExample{
+        width: 300px;
+        height: 200px;
+
+    }
+
+
+    #table_horarios{
+        width: 100%;
+    }
+
+    #mapa{
+        width: 90%;
+        height: 90%;
+    }
+
+    #articles_section2{
+        text-align: center;
+        
+    }
+
+
+  }
+  
+  /*@media screen and (max-width: 772px) {
     #titulo_ppal{
         margin-left: 180px;
         text-align: center;
     }
 
 
-  }
+  }*/
+
+
   

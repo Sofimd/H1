@@ -64,7 +64,7 @@ body{
 }
   
 
-#carouselExample{
+/* #carouselExample{
     margin: 1rem;
     padding: 1rem;
     display: flex;
@@ -72,17 +72,16 @@ body{
     align-content: center; 
     
 
-}
+} */
 
-.carousel-inner{
+/* .carousel-inner{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     max-width: 800px;
 
-
-}
+} */
 
 /*.carousel-control-prev:hover{
     color: #000;
@@ -351,3 +350,23 @@ footer{
 
 
   
+
+
+
+
+
+
+  
+  .col-carrusel{
+    padding: 40px 40px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .col-carrusel .carousel{
+    max-width: 800px;
+  
+  }

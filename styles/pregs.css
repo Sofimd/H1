@@ -3,47 +3,21 @@
     font-family: 'Comme', sans-serif;
 }
 
-header{
-    background-color: rgba(126, 154, 187, 0.534);
-    margin: 0;
-    padding: 2rem;
-}
-
 body{
     background-color: rgba(166, 187, 211, 0.336);
 }
 
-footer{
+header{
+    background-color: rgba(126, 154, 187, 0.534);
     margin: 0;
-    background-color: rgba(94, 137, 187, 0.801);
-    min-width: 772px;
+    padding: 2rem;
+    min-width: 360px;
+    width: 100%;
     display: flex;
- 
-
-}
-
-#footer_info{
-    display: flex;
-    flex-direction: column;
-    margin: 0;   
-    align-items: center;
-}
-
-#footer_info h2{
-    margin: 0;
-    padding: 1rem;
-    font-weight: 600;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    animation: colorAnimation 8s infinite;
 }
 
-footer p{
-    font-size: 12px;
-    text-align: center;
-    width: 60%;
-
-}
 
 
 #logo_inicio{
@@ -71,6 +45,66 @@ nav{
     font: bold;
 }
 
+
+
+main{
+    border: solid 1px black;
+    border-radius: 4px;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgba(48, 82, 122, 0.308);
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.preg h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+.preg p{
+    text-align: left;
+}
+
+
+
+footer{
+    margin: 0;
+    background-color: rgba(94, 137, 187, 0.801);
+    display: flex;
+    min-width: 360px;
+    width: 100%;
+ 
+
+}
+
+#footer_info{
+    display: flex;
+    flex-direction: column;
+    margin: 0;   
+    align-items: center;
+}
+
+#footer_info h2{
+    margin: 0;
+    padding: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer_servicios{
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+
+}
+
 #redes_sociales{
     display: flex;
     flex-direction: row;
@@ -90,16 +124,26 @@ nav{
     font: bold;
 }
 
-
-main{
-    border: solid 1px black;
-    border-radius: 4px;
-    margin: 2rem 4rem 2rem 4rem;
-    padding: 1rem;
-    background-color: rgba(48, 82, 122, 0.308);;
+@keyframes colorAnimation {
+    0% { background-color:  rgba(126, 154, 187, 0.973); }
+    25% { background-color: rgba(94, 137, 187, 0.801); }
+    50% { background-color: rgba(8, 73, 148, 0.644); }
+    75% { background-color:rgba(48, 83, 122, 0.801); }
+    100% { background-color: rgba(72, 108, 150, 0.801); }
 }
 
-header{
-    display: flex;
-    justify-content: center;
+
+@media screen and (min-widht: 360px) and (max-widht: 438px) {
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
 }
+
+ 
+    
+
+

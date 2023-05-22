@@ -31,7 +31,7 @@ header{
 .insc_button{
   border: 2px solid black;
   background-color: rgba(94, 137, 187, 0.801);
-  margin: 1rem;
+  margin: 10px;
   font-weight: 300;
   font-size: 20px;
 }
@@ -64,8 +64,20 @@ body{
 #titulo_ppal:hover {
     transform: translateY(8px);
 }
-  
 
+.container-carrusel{
+    padding: 40px 40px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .container-carrusel .carousel{
+    max-width: 700px;
+  
+  }
   
 
 h2{
@@ -228,17 +240,17 @@ footer{
 
 #ir_inicio{
     text-align: center;
+    text-decoration: none;
     font-weight: 300;
-    color: rgba(48, 83, 122, 0.801);
-    margin-bottom: 0;
-    margin-left: 1rem;
+    color: black;
+    margin-bottom: 10px;
     
 }
 
 #ir_inicio:hover{
-    text-decoration: none;
-    color: #fff;
-    font: bold; 
+    color:  rgba(8, 73, 148, 0.644);
+    font: bold;
+    transform: scale(1.01, 1.01);
 } 
 
 
@@ -268,16 +280,3 @@ footer{
     }
 
   
-  .container-carrusel{
-    padding: 40px 40px 80px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-  .container-carrusel .carousel{
-    max-width: 800px;
-  
-  }

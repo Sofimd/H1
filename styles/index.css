@@ -305,6 +305,8 @@ footer{
 
   @media screen and (min-widht: 360px) and (max-widht: 772px) {
 
+
+
     header{
         margin: 0;
         padding: 0;
@@ -356,7 +358,7 @@ footer{
 
 
 
-  
+
   .col-carrusel{
     padding: 40px 40px 80px 40px;
     display: flex;
@@ -370,3 +372,4 @@ footer{
     max-width: 800px;
   
   }
+

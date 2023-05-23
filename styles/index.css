@@ -20,26 +20,27 @@ header{
 
 
 #logo_inicio{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     top: 20px;
     right: 5px;
 }
 
+
 .insc_button{
   border: 2px solid black;
   background-color: rgba(94, 137, 187, 0.801);
-  margin: 1rem;
+  margin: 10px;
   font-weight: 300;
   font-size: 20px;
-  justify-content: center;
 }
 
 .insc_button:hover{
     text-decoration: none;
     color:  rgba(8, 73, 148, 0.644);
     font: bold;
+    transform: scale(1.01, 1.01);
 }
 
 /*main*/
@@ -56,66 +57,27 @@ body{
     font-weight: bold;
     text-decoration: underline;
     font-size: 4rem;
+
    
 }
 
 #titulo_ppal:hover {
-    transform: scale(1.01, 1.01);
-}
-  
-
-/* #carouselExample{
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center; 
-    
-
-} */
-
-/* .carousel-inner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    max-width: 800px;
-
-} */
-
-/*.carousel-control-prev:hover{
-    color: #000;
-    font: bold;
+    transform: translateY(8px);
 }
 
-.carousel-control-next:hover{
-    color: #000;
-    font: bold;
-} */
-
-/*.carousel-slide{
-    width: 100%;
-    height: 300px;
-    position: relative;
-  }
-  
-  .carousel-item{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-
-.carousel-item{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.container-carrusel{
+    padding: 40px 40px 80px 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  } */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .container-carrusel .carousel{
+    max-width: 700px;
+  
+  }
   
 
 h2{
@@ -125,12 +87,8 @@ h2{
     padding: 2rem;
 }
 
-/*ul{
-    margin-left: 4rem;
-    font-weight:400;
 
-
-} */
+/*articles_section1*/
 
 #articles_section1{
     padding: 1rem;
@@ -186,7 +144,6 @@ table{
 /*articles_section2*/
 
 #articles_section2{
-    /*margin: 1rem;*/
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -215,14 +172,31 @@ table{
     font-weight: bold;
 }
 
-/*@keyframes #articles_section2 {
+
+.mapa_container{
+    width: 265px;
+    height: 265px;
+    overflow:hidden;
+    margin: auto;
+    
+    
     
 }
-*/
-#mapa{
-max-width: 20rem;
-max-height: 20rem;
+
+.mapa_container iframe{
+    width: 85%;
+    height: 85%;
+
+    
+    
 }
+
+#articles_section2 h4{
+margin: 2rem;
+font-weight: bold;
+}
+
+/*footer*/
 
 footer{
     margin: 0;
@@ -230,13 +204,8 @@ footer{
     min-width: 360px;
     width: 100%;
   
-    
 }
 
-/*footer h2{
-    margin: 1rem;
-    padding: 1rem;
-} */
 
 #footer_info{
     margin: 0;   
@@ -246,10 +215,6 @@ footer{
     margin: 0;
     padding: 1rem;
     font-weight: 600;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
 
 }
 
@@ -275,33 +240,19 @@ footer{
 
 #ir_inicio{
     text-align: center;
+    text-decoration: none;
     font-weight: 300;
-    color: rgba(48, 83, 122, 0.801);
-    margin-bottom: 0;
-    margin-left: 1rem;
+    color: black;
+    margin-bottom: 10px;
     
 }
 
 #ir_inicio:hover{
-    text-decoration: none;
-    color: #fff;
-    font: bold; 
+    color:  rgba(8, 73, 148, 0.644);
+    font: bold;
+    transform: scale(1.01, 1.01);
 } 
 
-/*@media screen and (max-width: 445px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        justify-content: space-between;
-    }
-
-    #logo_inicio{
-        margin-right: 0;
-    }
-
-    
-  } */
 
   @media screen and (min-widht: 360px) and (max-widht: 772px) {
 
@@ -317,20 +268,12 @@ footer{
         text-align: center;
     }
 
-    #carouselExample{
-        width: 300px;
-        height: 200px;
-
-    }
-
 
     #table_horarios{
         width: 100%;
     }
 
-    #mapa{
-        width: 90%;
-        height: 90%;
+    
     }
 
     #articles_section2{
@@ -338,38 +281,4 @@ footer{
         
     }
 
-
-  }
   
-  /*@media screen and (max-width: 772px) {
-    #titulo_ppal{
-        margin-left: 180px;
-        text-align: center;
-    }
-
-
-  }*/
-
-
-  
-
-
-
-
-
-
-
-  .col-carrusel{
-    padding: 40px 40px 80px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-  .col-carrusel .carousel{
-    max-width: 800px;
-  
-  }
-

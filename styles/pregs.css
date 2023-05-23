@@ -3,21 +3,81 @@
     font-family: 'Comme', sans-serif;
 }
 
-header{
-    background-color: rgba(126, 154, 187, 0.534);
-    margin: 0;
-    padding: 2rem;
-}
-
 body{
     background-color: rgba(166, 187, 211, 0.336);
 }
 
+header{
+    background-color: rgba(126, 154, 187, 0.534);
+    margin: 0;
+    padding: 2rem;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: colorAnimation 8s infinite;
+}
+
+
+
+#logo_inicio{
+    width: 50px;
+    height: 50px;
+    margin-bottom: .5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insc_button{
+    border: 2px solid black;
+    background-color: rgba(94, 137, 187, 0.801);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+  .insc_button:hover{
+    text-decoration: none;
+    color:  rgba(8, 73, 148, 0.644);
+    font: bold;
+}
+
+
+
+main{
+    border: solid 1px black;
+    border-radius: 4px;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgba(48, 82, 122, 0.308);
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.preg h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+.preg p{
+    text-align: left;
+}
+
+
+
 footer{
     margin: 0;
     background-color: rgba(94, 137, 187, 0.801);
-    min-width: 772px;
     display: flex;
+    min-width: 360px;
+    width: 100%;
  
 
 }
@@ -38,37 +98,11 @@ footer{
     justify-content: center;
 }
 
-footer p{
+#footer_servicios{
     font-size: 12px;
     text-align: center;
     width: 60%;
 
-}
-
-
-#logo_inicio{
-    width: 50px;
-    height: 50px;
-    margin-bottom: .5rem;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.insc_button{
-    border: 2px solid black;
-    background-color: rgba(94, 137, 187, 0.801);
-    font-weight: 300;
-    font-size: 20px
-  }
-
-  .insc_button:hover{
-    text-decoration: none;
-    color:  rgba(8, 73, 148, 0.644);
-    font: bold;
 }
 
 #redes_sociales{
@@ -90,16 +124,26 @@ nav{
     font: bold;
 }
 
-
-main{
-    border: solid 1px black;
-    border-radius: 4px;
-    margin: 2rem 4rem 2rem 4rem;
-    padding: 1rem;
-    background-color: rgba(48, 82, 122, 0.308);;
+@keyframes colorAnimation {
+    0% { background-color:  rgba(126, 154, 187, 0.973); }
+    25% { background-color: rgba(94, 137, 187, 0.801); }
+    50% { background-color: rgba(8, 73, 148, 0.644); }
+    75% { background-color:rgba(48, 83, 122, 0.801); }
+    100% { background-color: rgba(72, 108, 150, 0.801); }
 }
 
-header{
-    display: flex;
-    justify-content: center;
+
+@media screen and (min-widht: 360px) and (max-widht: 438px) {
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
 }
+
+ 
+    
+
+
